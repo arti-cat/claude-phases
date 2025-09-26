@@ -22,6 +22,22 @@ The Claude Plan System consists of:
    /phase-deployment
    ```
 
+## Context7 Setup (Recommended)
+
+For optimal documentation integration, install Context7 MCP server:
+
+```bash
+# Using the official installation guide
+https://github.com/upstash/context7
+```
+
+**What Context7 provides:**
+- **Real-time documentation** - Fetches current docs for any technology (React, Node.js, PostgreSQL, etc.)
+- **Best practices verification** - Ensures generated agents use up-to-date approaches
+- **Technology-aware generation** - Agents include relevant documentation snippets
+
+**Without Context7:** The system still works but generated agents won't include current documentation insights.
+
 ## How It Works
 
 ### 1. Plan Structure
@@ -67,7 +83,7 @@ Each generated command like `/phase-frontend-setup` includes:
 ## Features
 
 - **Technology-aware** - Automatically detects npm, docker, database tools needed
-- **Documentation-integrated** - Fetches current docs for technologies mentioned
+- **Documentation-integrated** - Uses [Context7 MCP](https://github.com/upstash/context7) to fetch up-to-date docs for any technology mentioned
 - **Minimal permissions** - Each phase agent only gets necessary tools
 - **Consistent naming** - Predictable `/phase-{slug}` command pattern
 - **Project-agnostic** - Works with any tech stack or project type
