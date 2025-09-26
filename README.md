@@ -111,27 +111,30 @@ project/
 cp -r .claude/ /your/project/
 cp PLAN.md /your/project/  # Use as template
 
-# 2. Customize for your project
+# 2. Customize PLAN.md for your project
 cd /your/project/
-vim PLAN.md
+vim PLAN.md  # Edit to match your project's phases and tech stack
 
-# 3. Initialize project-specific context
+# 3. Initialize project-specific context (reads your PLAN.md)
 /init-project-context
 
-# 4. Generate phase commands
+# 4. Generate phase commands from your customized plan
 /plan
 ```
 
 ## Example Workflow
 
 ```bash
-# 1. Transform from template to your project
+# 1. First customize your PLAN.md for your project
+# (Edit PLAN.md to match your specific project needs)
+
+# 2. Transform CLAUDE.md from template to your project context
 /init-project-context "E-commerce Platform"
 
-# 2. Generate phase commands from your PLAN.md
+# 3. Generate phase commands from your PLAN.md
 /plan
 
-# 3. Execute phases in order
+# 4. Execute phases in order
 /phase-frontend-setup
 /phase-backend-api
 /phase-deployment
