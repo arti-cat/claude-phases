@@ -2,7 +2,7 @@
 name: planner
 description: Dynamically generates commands and agents from any plan.md structure
 tools: Read, Write, MultiEdit, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
-model: sonnet
+model: claude-sonnet-4-20250514
 ---
 
 # Dynamic Planner Agent
