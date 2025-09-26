@@ -219,3 +219,76 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ======================================
+# Claude Phases Development Workflow
+# ======================================
+
+# ADHD-friendly backup files
+*backup*
+*BACKUP*
+*.backup
+*_backup_*
+adhd-backup-*
+panic-backup-*
+
+# Development work-in-progress
+wip/
+WIP/
+00_wip/
+temp/
+scratch/
+experimental-*
+test-*
+debug-*
+
+# Development notes and personal files
+NOTES.md
+PERSONAL.md
+TODO.md
+BRAINSTORM.md
+IDEAS.md
+*-notes.md
+*-todo.md
+
+# Generated development files
+generated/
+.generated/
+auto-generated/
+
+# Testing artifacts from development workflow
+test-results/
+coverage-reports/
+.test-output/
+
+# Claude Code conversation backups
+.claude-conversations/
+claude-session-*
+conversation-backup-*
+
+# Development scripts temporary outputs
+scripts/output/
+scripts/logs/
+scripts/temp/
+
+# macOS development artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Development IDE files (uncommented for development)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary development databases
+*.db
+*.sqlite
+development.db
+test.db
