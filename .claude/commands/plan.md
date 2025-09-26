@@ -2,7 +2,6 @@
 allowed-tools: Read, Task
 argument-hint: # Reads PLAN.md and triggers planner agent
 description: Parse PLAN.md and generate phase-specific commands/agents
-model: sonnet
 ---
 
 # Plan Command
