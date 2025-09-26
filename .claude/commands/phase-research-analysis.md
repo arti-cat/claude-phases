@@ -2,7 +2,7 @@
 allowed-tools: [mcp__context7__resolve-library-id, mcp__context7__get-library-docs, Read, Write, MultiEdit]
 argument-hint: Research cognitive indicators and design behavioral detection algorithms
 description: Execute Phase 1 - Research & Analysis for ADHD Cognitive Statusline
-model: claude-3-5-sonnet-20241022
+model: claude-sonnet-4-20250514
 ---
 
 # Research & Analysis Phase

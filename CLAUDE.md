@@ -1,66 +1,68 @@
-# Claude Phases Project
+# ADHD Cognitive Statusline Project
 
-This is the **claude-phases** project - a reusable dynamic planning system for Claude Code.
+This project uses the claude-phases system to build an ADHD-aware cognitive state tracker that displays real-time mental state assessment in Claude Code's statusline, based on session behavior patterns.
 
-## Project Purpose
+## Project Overview
 
-This project contains a complete planning system that can be copied to any project to provide phase-based development workflow:
+- **Technology Stack**: Bash scripting, jq for JSON parsing, ANSI colors, Context7 MCP
+- **Core Purpose**: Behavioral analysis for ADHD developers using Claude Code
+- **Architecture**: Modular statusline script with cognitive detection algorithms
+- **Target Users**: Developers with ADHD seeking cognitive state awareness
 
-- **Planner Agent** (`.claude/agents/planner.md`) - Specialized AI that analyzes PLAN.md files
-- **Plan Command** (`.claude/commands/plan.md`) - Slash command that triggers the planner
-- **Template PLAN.md** - Example structure for users to customize
+## Key Features
 
-## When You're Working On This Project
+- **Focus State Detection**: Session duration patterns and sustained vs. fragmented work
+- **Energy Level Assessment**: Productivity velocity and task completion tracking
+- **Context Switching Analysis**: Directory changes and attention fragmentation detection
+- **Hyperfocus Warnings**: Extended session alerts with break recommendations
+- **Personalized Thresholds**: ADHD-specific configuration profiles
+- **Visual Accessibility**: Distraction-sensitive themes and color schemes
 
-You are working on the **source/template project** for the claude-phases system. Changes here affect:
+## Technical Components
 
-- The planner agent's core intelligence and capabilities
-- The plan command's behavior and documentation
-- The example PLAN.md template that users will customize
-- The README documentation that explains the system
+- **Research & Analysis**: Context7 integration for Claude Code statusline documentation
+- **Core Infrastructure**: Modular bash script architecture with JSON data extraction
+- **Cognitive Detection**: Mathematical algorithms for behavioral pattern recognition
+- **Visual Display**: ANSI colors, emoji support, and ADHD-sensitive messaging
+- **Configuration**: JSON-based user profiles for different ADHD presentations
+- **Testing**: Comprehensive validation of cognitive assessment accuracy
 
-## When This System Is Used In Other Projects
+## Claude-Phases System Integration
 
-When copied to another project, this system:
+This project demonstrates the claude-phases planning system with:
 
-1. **Reads that project's PLAN.md** - Not this template one
-2. **Generates phase commands** specific to that project's tech stack
-3. **Creates specialized agents** for that project's phases
-4. **Uses Context7** to fetch current documentation for that project's technologies
+- **Phase-based development** using `/phase-*` commands
+- **Specialized agents** for each development phase
+- **Context7 MCP tools** for real-time documentation fetching
+- **Dynamic planning** adapted to cognitive science and behavioral analysis
 
-## Key System Features
+## Project Phases
 
-- **Technology Detection** - Automatically detects npm, docker, database tools needed
-- **Documentation Integration** - Uses Context7 MCP to fetch up-to-date docs
-- **Minimal Permissions** - Each phase agent gets only necessary tools
-- **UV Python Preference** - Updated to prefer modern UV for Python projects
-- **Virtual Environment Awareness** - Checks for .venv activation when testing
+1. **Research & Analysis** - Map Claude Code JSON data to cognitive indicators
+2. **Core Infrastructure** - Build foundational statusline script architecture
+3. **Cognitive Detection** - Implement ADHD-specific behavioral algorithms
+4. **Visual Display** - Create accessible, distraction-sensitive visual feedback
+5. **Configuration** - Build personalized ADHD profile system
+6. **Integration & Testing** - Validate cognitive accuracy and system performance
 
-## Important Implementation Notes
+## Innovation Impact
 
-- Use **UV for Python** management (uv run, uv sync, uv add, uv pip install)
-- Always **check virtual environment activation** (.venv) when testing
-- Generate commands as `/phase-{slug}` format (lowercase, hyphens)
-- Include **Context7 documentation verification** in generated agents
-- Keep **tool permissions minimal** for each phase
+This is the first real-time ADHD cognitive assessment tool integrated into a development environment. The insight that coding behavior data can serve as cognitive state proxies represents a groundbreaking approach to supporting neurodivergent developers.
 
-## Usage Workflow
+## Usage
 
-1. User customizes their project's PLAN.md
-2. User runs `/plan` command
-3. System generates `.claude/commands/phase-*.md` and `.claude/agents/phase-*.md` files
-4. User executes phase commands like `/phase-frontend-setup`
+Run `/plan` to generate all phase commands, then execute phases in sequence:
+- `/phase-research-analysis`
+- `/phase-core-infrastructure`
+- `/phase-cognitive-detection`
+- `/phase-visual-display`
+- `/phase-configuration`
+- `/phase-integration-testing`
 
-## Copying This System
+Each phase includes Context7-verified approaches and specialized tools for ADHD-aware development patterns.
 
-To use in another project:
-```bash
-# Copy the system files
-cp -r .claude/ /path/to/target/project/
-cp PLAN.md /path/to/target/project/  # Use as template
-
-# Customize the target project's PLAN.md
-# Run /plan in the target project
-```
-
-The system automatically adapts to the target project's structure and requirements.
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.

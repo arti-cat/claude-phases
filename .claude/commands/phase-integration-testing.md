@@ -2,7 +2,7 @@
 allowed-tools: [Read, Write, MultiEdit, Bash(*)]
 argument-hint: Test cognitive assessment accuracy and validate complete system integration
 description: Execute Phase 6 - Integration & Testing for ADHD Cognitive Statusline
-model: claude-3-5-sonnet-20241022
+model: claude-sonnet-4-20250514
 ---
 
 # Integration & Testing Phase

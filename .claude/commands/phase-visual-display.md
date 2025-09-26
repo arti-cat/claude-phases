@@ -2,7 +2,7 @@
 allowed-tools: [Read, Write, MultiEdit]
 argument-hint: Create visual output system with color-coded indicators and actionable messaging
 description: Execute Phase 4 - Visual Display System for ADHD Cognitive Statusline
-model: claude-3-5-sonnet-20241022
+model: claude-sonnet-4-20250514
 ---
 
 # Visual Display System Phase

@@ -2,7 +2,7 @@
 allowed-tools: [Read, Write, MultiEdit, Bash(jq:*)]
 argument-hint: Build the foundational statusline script architecture with modular components
 description: Execute Phase 2 - Core Infrastructure for ADHD Cognitive Statusline
-model: claude-3-5-sonnet-20241022
+model: claude-sonnet-4-20250514
 ---
 
 # Core Infrastructure Phase

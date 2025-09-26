@@ -2,7 +2,7 @@
 allowed-tools: [Read, Write, MultiEdit, Bash(jq:*)]
 argument-hint: Build user-customizable configuration system for personalized cognitive thresholds
 description: Execute Phase 5 - Configuration Framework for ADHD Cognitive Statusline
-model: claude-3-5-sonnet-20241022
+model: claude-sonnet-4-20250514
 ---
 
 # Configuration Framework Phase

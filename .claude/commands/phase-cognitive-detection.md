@@ -2,7 +2,7 @@
 allowed-tools: [Read, Write, MultiEdit, Bash(bc:*)]
 argument-hint: Implement core cognitive state detection algorithms using session behavioral data
 description: Execute Phase 3 - Cognitive Detection Engine for ADHD Cognitive Statusline
-model: claude-3-5-sonnet-20241022
+model: claude-sonnet-4-20250514
 ---
 
 # Cognitive Detection Engine Phase
