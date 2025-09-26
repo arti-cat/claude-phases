@@ -231,6 +231,7 @@ __marimo__/
 *_backup_*
 adhd-backup-*
 panic-backup-*
+ADHD-*.MD
 
 # Development work-in-progress
 wip/

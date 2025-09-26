@@ -1,102 +1,122 @@
-# Example Project Plan
+# ADHD Cognitive Statusline Project Plan
 
-This is a template for creating project plans that the `/plan` command can parse to generate phase-specific commands and agents.
+Build an ADHD-aware cognitive state tracker that displays real-time mental state assessment in Claude Code's statusline, based on session behavior patterns.
 
-## Frontend Setup
+## Research & Analysis
 
-Create a modern React application with proper tooling and configuration.
-
-**Goals:**
-- Initialize React project with Vite
-- Configure TypeScript and ESLint
-- Set up Tailwind CSS for styling
-- Create basic project structure
-
-**Technologies:**
-- React 18
-- Vite
-- TypeScript
-- Tailwind CSS
-
-## Backend API
-
-Build a REST API server with authentication and database integration.
+Research cognitive indicators available in Claude Code's statusline JSON data and design behavioral pattern detection algorithms.
 
 **Goals:**
-- Set up Express.js server
-- Implement JWT authentication
-- Create user CRUD operations
-- Connect to PostgreSQL database
+- Use Context7 to fetch current Claude Code statusline documentation
+- Map JSON data fields (duration, lines added/removed, cwd changes) to cognitive states
+- Research ADHD-specific behavioral patterns in coding sessions
+- Design detection algorithms for focus, energy, and context-switching states
 
 **Technologies:**
-- Node.js
-- Express.js
-- PostgreSQL
-- JWT tokens
+- Context7 MCP for documentation
+- Claude Code statusline JSON structure
+- Behavioral analysis patterns
+- Cognitive science principles
 
-## Database Schema
+## Core Infrastructure
 
-Design and implement the database schema with proper relationships.
+Build the foundational statusline script architecture with modular, extensible components.
 
 **Goals:**
-- Create user tables
-- Set up product catalog
-- Implement order relationships
-- Add indexes for performance
+- Create statusline script entry point and JSON parsing
+- Build modular architecture for analysis functions
+- Implement helper functions for data extraction
+- Set up extensible framework for cognitive analysis modules
 
 **Technologies:**
-- PostgreSQL
-- Database migrations
-- SQL schemas
+- Bash scripting
+- jq for JSON parsing
+- Modular function design
+- Claude Code statusline integration
 
-## Testing & Quality
+## Cognitive Detection Engine
 
-Implement comprehensive testing and code quality checks.
+Implement the core cognitive state detection algorithms using session behavioral data.
 
 **Goals:**
-- Unit tests for components
-- API integration tests
-- E2E testing setup
-- Code coverage reporting
+- Implement focus state detection based on session duration patterns
+- Build energy level assessment using productivity velocity
+- Create context switching detection from directory/project changes
+- Develop hyperfocus warning system for extended sessions
 
 **Technologies:**
-- Jest
-- React Testing Library
-- Playwright
-- ESLint/Prettier
+- Mathematical analysis algorithms
+- Pattern recognition logic
+- Threshold-based state detection
+- Time-series behavioral analysis
 
-## Deployment
+## Visual Display System
 
-Deploy the application to production with CI/CD pipeline.
+Create the visual output system with color-coded indicators and actionable messaging.
 
 **Goals:**
-- Docker containerization
-- AWS deployment setup
-- CI/CD pipeline configuration
-- Environment management
+- Design color-coded cognitive state indicators (🟢🟡🔴)
+- Implement contextual messaging ("Take break", "Good flow", "Hyperfocus warning")
+- Create emoji-based state visualization
+- Build theme system for different visual styles
+- Some people find that many colors and emojis are distracting, cater for them
 
 **Technologies:**
-- Docker
-- AWS (ECS/RDS)
-- GitHub Actions
-- Environment variables
+- ANSI color codes
+- Unicode emoji support
+- String formatting
+- Visual design patterns
+
+## Configuration Framework
+
+Build user-customizable configuration system for personalized cognitive thresholds.
+
+**Goals:**
+- Create JSON-based configuration file system
+- Implement user-customizable thresholds for cognitive states
+- Build personality-based configuration profiles
+- Add runtime configuration loading and validation
+
+**Technologies:**
+- JSON configuration files
+- Default/override configuration patterns
+- File system operations
+- Configuration validation
+
+## Integration & Testing
+
+Test the cognitive assessment accuracy against real coding sessions and validate the complete system.
+
+**Goals:**
+- Test cognitive state accuracy against real Claude Code sessions
+- Validate integration with existing statusline system
+- Create testing framework for behavioral pattern validation
+- Document system performance and accuracy metrics
+
+**Technologies:**
+- Testing frameworks
+- Session data analysis
+- Performance validation
+- Documentation systems
 
 ---
 
-## How to Use This Template
+## Project Context
 
-1. **Customize the phases** - Replace with your project's specific phases
-2. **Update technologies** - List the actual tech stack you'll use
-3. **Modify goals** - Define what each phase should accomplish
-4. **Run `/plan`** - The planner will generate phase commands automatically
+This project serves a dual purpose:
+1. **Build** an innovative ADHD cognitive support tool for developers
+2. **Test** the claude-phases planning system with a non-traditional project structure
 
-## Expected Output
+## Expected Learning Outcomes
 
-After running `/plan` with this template, you'll get commands like:
-- `/phase-frontend-setup`
-- `/phase-backend-api`
-- `/phase-database-schema`
-- `/phase-testing-quality`
-- `/phase-deployment`
+- How well does the planner handle behavioral/cognitive science projects?
+- Can the system generate appropriate tools for script-based (non-web) projects?
+- Does Context7 integration work effectively for fetching current documentation?
+- How does the phase execution work for analysis and research-heavy phases?
 
-Each command will have a specialized agent that knows how to implement that specific phase using the mentioned technologies.
+## Success Metrics
+
+- Generated phase commands match the project's unique requirements
+- Context7 successfully fetches Claude Code statusline documentation
+- Each phase agent receives appropriate tools for its specific tasks
+- Complete statusline implementation provides accurate cognitive feedback

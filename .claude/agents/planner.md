@@ -2,7 +2,7 @@
 name: planner
 description: Dynamically generates commands and agents from any plan.md structure
 tools: Read, Write, MultiEdit, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
-model: sonnet
+model: claude-sonnet-4-20250514
 ---
 
 # Dynamic Planner Agent
@@ -74,7 +74,7 @@ For each phase, create command file with:
 allowed-tools: [determined tools list]
 argument-hint: # Phase-specific usage hint
 description: Execute Phase X - [phase name]
-model: sonnet
+model: claude-sonnet-4-20250514
 ---
 
 # Phase Command content with specific instructions

@@ -2,7 +2,6 @@
 allowed-tools: Read, Write, Edit
 argument-hint: [project-name] [project-description]
 description: Transform CLAUDE.md from template to project-specific context
-model: sonnet
 ---
 
 # Initialize Project Context
