@@ -1,0 +1,25 @@
+{
+  "hook_event_name": "Status",
+  "session_id": "abc123def456ghi789",
+  "transcript_path": "/home/user/.claude/projects/my-project/12345678-1234-5678-9012-123456789012.jsonl",
+  "cwd": "/home/user/dev/my-awesome-project",
+  "model": {
+    "id": "claude-3-5-sonnet-20241022",
+    "display_name": "Claude 3.5 Sonnet"
+  },
+  "workspace": {
+    "current_dir": "/home/user/dev/my-awesome-project",
+    "project_dir": "/home/user/dev/my-awesome-project"
+  },
+  "version": "1.2.34",
+  "output_style": {
+    "name": "default"
+  },
+  "cost": {
+    "total_cost_usd": 0.12345,
+    "total_duration_ms": 145000,
+    "total_api_duration_ms": 23450,
+    "total_lines_added": 156,
+    "total_lines_removed": 23
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Claude Code Statusline Data Schema",
+  "description": "Official JSON schema for data passed to Claude Code statusline scripts via stdin",
+  "type": "object",
+  "required": [
+    "hook_event_name",
+    "session_id",
+    "transcript_path",
+    "cwd",
+    "model",
+    "workspace",
+    "version",
+    "output_style",
+    "cost"
+  ],
+  "properties": {
+    "hook_event_name": {
+      "type": "string",
+      "const": "Status",
+      "description": "Always 'Status' for statusline hooks"
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]+$",
+      "description": "Unique identifier for the current Claude Code session"
+    },
+    "transcript_path": {
+      "type": "string",
+      "description": "Absolute path to the conversation transcript file (.jsonl)"
+    },
+    "cwd": {
+      "type": "string",
+      "description": "Current working directory path"
+    },
+    "model": {
+      "type": "object",
+      "required": ["id", "display_name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Technical model identifier (e.g., 'claude-3-5-sonnet-20241022')"
+        },
+        "display_name": {
+          "type": "string",
+          "description": "Human-readable model name (e.g., 'Claude 3.5 Sonnet')"
+        }
+      }
+    },
+    "workspace": {
+      "type": "object",
+      "required": ["current_dir", "project_dir"],
+      "properties": {
+        "current_dir": {
+          "type": "string",
+          "description": "Current working directory path"
+        },
+        "project_dir": {
+          "type": "string",
+          "description": "Original project directory when Claude Code started"
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Claude Code version string (semantic versioning)"
+    },
+    "output_style": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Current output style/theme name"
+        }
+      }
+    },
+    "cost": {
+      "type": "object",
+      "required": [
+        "total_cost_usd",
+        "total_duration_ms",
+        "total_api_duration_ms",
+        "total_lines_added",
+        "total_lines_removed"
+      ],
+      "properties": {
+        "total_cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Total session cost in USD"
+        },
+        "total_duration_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total session duration in milliseconds"
+        },
+        "total_api_duration_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Time spent in API calls in milliseconds"
+        },
+        "total_lines_added": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total lines of code added this session"
+        },
+        "total_lines_removed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total lines of code removed this session"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
