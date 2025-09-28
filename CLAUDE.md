@@ -22,7 +22,11 @@ This project uses the claude-phases system to build an ADHD-aware cognitive stat
 - **Phase 6: Integration & Testing** - Comprehensive validation and multiple working implementations
 
 **🚀 Working Implementations Available:**
-- Multiple statusline variants in `~/.claude/adhd-statusline-*.sh`
+- **Production Ready**: `~/.claude/adhd-statusline-configurable.sh` (full-featured, 459 lines)
+- **Lightweight Option**: `~/.claude/statusline-simple-adhd.sh` (minimal, 81 lines)
+- **Production Modules**: `~/.claude/modules/` (4 specialized behavioral analysis modules)
+- **Development Archive**: `~/.claude/archive/statusline-development/` (7 evolutionary versions)
+- **Legacy Archive**: `~/.claude/archive/adhd-statusline-legacy/` (prototype modules and docs)
 - Complete configuration system with ADHD-specific profiles
 - Real-time cognitive state detection and hyperfocus warnings
 - Full documentation and installation guides
@@ -128,14 +132,16 @@ This is the first real-time ADHD cognitive assessment tool integrated into a dev
 
 ### 🏆 Technical Achievements (7 Progressive Implementations)
 
-**Evolution from Basic (87 lines) → Advanced (459 lines):**
-- **adhd-statusline-working.sh**: Foundation with circadian awareness
-- **statusline-simple-adhd.sh**: Breakthrough API ratio behavioral analysis
-- **adhd-statusline-final.sh**: Mathematical cognitive modeling with `bc`
-- **adhd-statusline-enhanced.sh**: Visual excellence with ANSI progress bars
-- **adhd-statusline-context-aware.sh**: Attention fragmentation scoring
-- **adhd-statusline-advanced.sh**: Predictive risk assessment algorithms
-- **adhd-statusline-configurable.sh**: Complete personalization engine
+**Evolution from Basic (87 lines) → Production (459 lines):**
+- **adhd-statusline-working.sh**: Foundation with circadian awareness [ARCHIVED]
+- **statusline-simple-adhd.sh**: Breakthrough API ratio behavioral analysis [ACTIVE - Lightweight]
+- **adhd-statusline-final.sh**: Mathematical cognitive modeling with `bc` [ARCHIVED]
+- **adhd-statusline-enhanced.sh**: Visual excellence with ANSI progress bars [ARCHIVED]
+- **adhd-statusline-context-aware.sh**: Attention fragmentation scoring [ARCHIVED]
+- **adhd-statusline-advanced.sh**: Predictive risk assessment algorithms [ARCHIVED]
+- **adhd-statusline-configurable.sh**: Complete personalization engine [ACTIVE - Production]
+
+*Archived versions available in `~/.claude/archive/statusline-development/` for reference*
 
 ### 🧠 Core ADHD Cognitive Features
 
